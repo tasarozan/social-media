@@ -57,7 +57,10 @@ module.exports = class User {
     userToUnfollow.followers = userToUnfollow.followers.filter(follower => follower.username !== this.username)
 
   }
-
+  static create({username, name}) {
+    return new User(username,name)
+  }
+  
 }
 
 
