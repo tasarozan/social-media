@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  main
+    h1 The number of the people is #{people.length}
+    h2 Hello
+    each user in people
+      p #{user.name}      
+    pre #{JSON.stringify(people, null, 4)}
+    
